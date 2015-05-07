@@ -1,3 +1,24 @@
+## open_karto (indigo) - 1.1.1-0
+
+The packages in the `open_karto` repository were released into the `indigo` distro by running `/usr/bin/bloom-release -r indigo -t indigo open_karto` on `Thu, 07 May 2015 07:57:12 -0000`
+
+The `open_karto` package was released.
+
+Version of package(s) in repository `open_karto`:
+- upstream repository: https://github.com/ros-perception/open_karto.git
+- release repository: https://github.com/ros-gbp/open_karto-release.git
+- rosdistro version: `1.1.0-0`
+- old version: `1.1.0-0`
+- new version: `1.1.1-0`
+
+Versions of tools used:
+- bloom version: `0.5.20`
+- catkin_pkg version: `0.2.7`
+- rosdep version: `0.11.2`
+- rosdistro version: `0.4.1`
+- vcstools version: `0.1.36`
+
+
 ## open_karto (hydro) - 1.1.0-0
 
 The packages in the `open_karto` repository were released into the `hydro` distro by running `/usr/bin/bloom-release -t hydro -r hydro open_karto` on `Fri, 20 Jun 2014 23:38:42 -0000`
