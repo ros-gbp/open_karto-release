@@ -1,3 +1,24 @@
+## open_karto (jade) - 1.1.3-0
+
+The packages in the `open_karto` repository were released into the `jade` distro by running `/usr/bin/bloom-release -r jade -t jade open_karto` on `Wed, 17 Feb 2016 05:47:32 -0000`
+
+The `open_karto` package was released.
+
+Version of package(s) in repository `open_karto`:
+- upstream repository: https://github.com/ros-perception/open_karto.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `1.1.3-0`
+
+Versions of tools used:
+- bloom version: `0.5.20`
+- catkin_pkg version: `0.2.6`
+- rosdep version: `0.11.4`
+- rosdistro version: `0.4.2`
+- vcstools version: `0.1.36`
+
+
 ## open_karto (indigo) - 1.1.3-0
 
 The packages in the `open_karto` repository were released into the `indigo` distro by running `/usr/bin/bloom-release -r indigo -t indigo open_karto` on `Wed, 17 Feb 2016 05:36:24 -0000`
