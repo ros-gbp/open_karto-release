@@ -1,0 +1,12 @@
+Source: ros-jade-open-karto
+Section: misc
+Priority: extra
+Maintainer: Michael Ferguson <mferguson@fetchrobotics.com>
+Build-Depends: debhelper (>= 9.0.0), libboost-all-dev, ros-indigo-catkin
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-jade-open-karto
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-all-dev
+Description: Catkinized ROS packaging of the OpenKarto library
