@@ -2,6 +2,11 @@
 Changelog for package open_karto
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.1.3 (2016-02-16)
+------------------
+* Link against, and export depend on, boost
+* Contributors: Hai Nguyen, Michael Ferguson
+
 1.1.2 (2015-07-13)
 ------------------
 * Added getters and setters for parameters inside Mapper so they can be changed via the ROS param server.
