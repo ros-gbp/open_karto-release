@@ -1,3 +1,26 @@
+## open_karto (kinetic) - 1.1.4-0
+
+The packages in the `open_karto` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release -r kinetic -t kinetic open_karto` on `Tue, 23 Aug 2016 16:18:54 -0000`
+
+The `open_karto` package was released.
+
+Version of package(s) in repository `open_karto`:
+
+- upstream repository: https://github.com/ros-perception/open_karto.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `1.1.4-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.21`
+- catkin_pkg version: `0.2.10`
+- rosdep version: `0.11.5`
+- rosdistro version: `0.4.7`
+- vcstools version: `0.1.38`
+
+
 ## open_karto (indigo) - 1.1.4-0
 
 The packages in the `open_karto` repository were released into the `indigo` distro by running `/usr/bin/bloom-release -r indigo -t indigo open_karto` on `Thu, 03 Mar 2016 03:32:19 -0000`
