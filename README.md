@@ -1,3 +1,26 @@
+## open_karto (lunar) - 1.1.4-0
+
+The packages in the `open_karto` repository were released into the `lunar` distro by running `/usr/bin/bloom-release -r lunar -t lunar open_karto` on `Mon, 13 Aug 2018 20:58:06 -0000`
+
+The `open_karto` package was released.
+
+Version of package(s) in repository `open_karto`:
+
+- upstream repository: https://github.com/ros-perception/open_karto.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `1.1.4-0`
+
+Versions of tools used:
+
+- bloom version: `0.6.6`
+- catkin_pkg version: `0.4.7`
+- rosdep version: `0.12.2`
+- rosdistro version: `0.6.8`
+- vcstools version: `0.1.40`
+
+
 ## open_karto (melodic) - 1.2.0-0
 
 The packages in the `open_karto` repository were released into the `melodic` distro by running `/usr/bin/bloom-release --rosdistro melodic --track melodic open_karto --new-track` on `Wed, 11 Jul 2018 16:31:17 -0000`
