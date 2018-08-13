@@ -5838,7 +5838,6 @@ namespace karto
     {
       kt_double rangeThreshold = pScan->GetLaserRangeFinder()->GetRangeThreshold();
       kt_double maxRange = pScan->GetLaserRangeFinder()->GetMaximumRange();
-      kt_double minRange = pScan->GetLaserRangeFinder()->GetMinimumRange();
 
       Vector2<kt_double> scanPosition = pScan->GetSensorPose().GetPosition();
 
@@ -5855,9 +5854,9 @@ namespace karto
         kt_double rangeReading = pScan->GetRangeReadings()[pointIndex];
         kt_bool isEndPointValid = rangeReading < (rangeThreshold - KT_TOLERANCE);
 
-        if (rangeReading <= minRange || rangeReading >= maxRange || std::isnan(rangeReading))
+        if (rangeReading >= maxRange || isnan(rangeReading))
         {
-          // ignore these readings
+          // ignore max range readings
           pointIndex++;
           continue;
         }
@@ -6431,7 +6430,7 @@ namespace karto
       for (kt_int32u angleIndex = 0; angleIndex < nAngles; angleIndex++)
       {
         angle = startAngle + angleIndex * angleResolution;
-        ComputeOffsets(angleIndex, angle, localPoints, pScan);
+        ComputeOffsets(angleIndex, angle, localPoints);
       }
       // assert(math::DoubleEqual(angle, angleCenter + angleOffset));
     }
@@ -6443,7 +6442,7 @@ namespace karto
      * @param angle
      * @param rLocalPoints
      */
-    void ComputeOffsets(kt_int32u angleIndex, kt_double angle, const Pose2Vector& rLocalPoints, LocalizedRangeScan* pScan)
+    void ComputeOffsets(kt_int32u angleIndex, kt_double angle, const Pose2Vector& rLocalPoints)
     {
       m_ppLookupArray[angleIndex]->SetSize(static_cast<kt_int32u>(rLocalPoints.size()));
       m_Angles.at(angleIndex) = angle;
@@ -6460,19 +6459,9 @@ namespace karto
 
       kt_int32s* pAngleIndexPointer = m_ppLookupArray[angleIndex]->GetArrayPointer();
 
-      kt_double maxRange = pScan->GetLaserRangeFinder()->GetMaximumRange();
-
       const_forEach(Pose2Vector, &rLocalPoints)
       {
         const Vector2<kt_double>& rPosition = iter->GetPosition();
-
-        if (std::isnan(pScan->GetRangeReadings()[readingIndex]) || std::isinf(pScan->GetRangeReadings()[readingIndex]))
-        {
-          pAngleIndexPointer[readingIndex] = INVALID_SCAN;
-          readingIndex++;
-          continue;
-        }
-
 
         // counterclockwise rotation and that rotation is about the origin (0, 0).
         Vector2<kt_double> offset;
