@@ -1,3 +1,26 @@
+## open_karto (melodic) - 1.2.3-1
+
+The packages in the `open_karto` repository were released into the `melodic` distro by running `/usr/bin/bloom-release -r melodic -t melodic open_karto` on `Wed, 11 Nov 2020 02:41:12 -0000`
+
+The `open_karto` package was released.
+
+Version of package(s) in repository `open_karto`:
+
+- upstream repository: https://github.com/ros-perception/open_karto.git
+- release repository: https://github.com/ros-gbp/open_karto-release.git
+- rosdistro version: `1.2.2-1`
+- old version: `1.2.2-1`
+- new version: `1.2.3-1`
+
+Versions of tools used:
+
+- bloom version: `0.10.0`
+- catkin_pkg version: `0.4.20`
+- rosdep version: `0.19.0`
+- rosdistro version: `0.8.2`
+- vcstools version: `0.1.40`
+
+
 ## open_karto (noetic) - 1.2.2-1
 
 The packages in the `open_karto` repository were released into the `noetic` distro by running `/usr/bin/bloom-release -r noetic -t noetic open_karto` on `Sat, 08 Aug 2020 01:44:26 -0000`
